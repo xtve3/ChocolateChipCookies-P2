@@ -3,13 +3,13 @@ int appWidth, appHeight, largerDimension, smallerDimension;
 
 //
 void setup () {
-   size(600,400);
+   size(1000,800);
    //fullScreen(); //uses displayWidth, displayHeight
-   //Display algorithm from Hello World
    appWidth = width;
    appHeight = height;
-   largerDimension = ; //from display algorithm
-   smallerDimension = ; //from display algorithm
+   display (); //this is display algorithm 
+   //largerDimension = ; //from display algorithm
+   //smallerDimension = ; //from display algorithm 
    
 }//End setup
 //
