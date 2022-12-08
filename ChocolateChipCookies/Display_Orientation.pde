@@ -14,10 +14,19 @@ void display () {
     if ( appWidth > displayWidth ) appWidth = 0; //CANVAS-width will not fit
     if ( appHeight > displayHeight ) appHeight = 0; //CANVAS-height will not fit
     if ( appWidth != 0 && appHeight != 0 ) {
-      print("Display Geoemtry is Good to Go.");
+      print("Good job lol");
     } else {
       println("lmao you broke it stop");
     }
+      if (appWidth >= appHeight) {
+  appWidth = largerDimension;
+  appHeight = smallerDimension;
+  println("\t\tLandscape mode");
+  } else {
+  appHeight = largerDimension;
+  appWidth = smallerDimension;
+  println("\t\tPortrait mode");
+  }
   }
 }//end display
 //

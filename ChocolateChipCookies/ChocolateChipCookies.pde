@@ -1,5 +1,5 @@
 //Global Variables 
-int appWidth, appHeight, largerDimension, smallerDimension;
+int appWidth=1, appHeight=1, largerDimension, smallerDimension;
 
 //
 void setup () {
@@ -8,7 +8,8 @@ void setup () {
    appWidth = width;
    appHeight = height;
    display (); //this is display algorithm 
-   //largerDimension = ; //from display algorithm
+   println("Smaller Dimension is", smallerDimension, "Larger Dimension is", largerDimension);
+   //largerDimension = ; //from display algorithm 
    //smallerDimension = ; //from display algorithm 
    
 }//End setup
