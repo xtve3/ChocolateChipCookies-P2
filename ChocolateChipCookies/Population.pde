@@ -6,6 +6,11 @@ void population() {
   startButtonX = centerX - startButtonWidth * 1/2;
   startButtonY = centerY - startButtonHeight * 1/2;
   //
+  backgroundX = appWidth * 0;
+  backgroundY = appHeight * 0;
+  backgroundWidth = appWidth;
+  backgroundHeight = appHeight;
+  //
 }//end population
 //
 //end population subprogram
