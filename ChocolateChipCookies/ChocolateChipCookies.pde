@@ -26,6 +26,7 @@ void draw () {
   //Assignment #2 OS level mouse click and splash screen 
   if (OS_On==true && splashScreenStart==false) splashScreen(); ; //OS level MOUSE click
   if (splashScreenStart==true) homeScreen();
+  if (splashScreenStart==true) nineSquares();
 }//End draw
 //
 void keyPressed () {
