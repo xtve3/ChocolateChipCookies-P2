@@ -1,6 +1,7 @@
 //Global Variables 
 int appWidth, appHeight, largerDimension, smallerDimension;
-Boolean OS_On=false, splashScreenStart=false;
+Boolean OS_On=false, splashScreenStart=false; 
+Boolean nightMode=false; //bonus1: populate with system clock
 color resetDefaultInk=#000000, white=#FFFFFF, green=#5BDE00; 
   /* nightMode comments
   green is nightMode friendly
@@ -35,6 +36,19 @@ void keyPressed () {
     splashScreenStart = true;
     backgroundImage();
    }//End Splash screen SPACE bar
+   //
+   //Keyboard shortcuts
+   if(key==CODED || keyCode==ESC) exit(); 
+   if(key=='Q' || key=='q') exit(); 
+   if(key=='N' || key=='n') {
+     if(nightMode==false) {
+     nightMode = true;
+     backgroundImage();
+     } else {
+     nightMode = false;
+     backgroundImage();
+     }
+   }
    //
 }//End keyPressed
 //

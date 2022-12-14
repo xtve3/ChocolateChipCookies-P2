@@ -1,4 +1,5 @@
 String spaceBar = "Press the Space Bar to continue";
+String quit = "Quit";
 PFont fontI;
   void textSetup() { //end textSetup
   //Minimum expectation is SINGLE FONT
@@ -7,7 +8,7 @@ PFont fontI;
   //Fonts from OS (Operating System)
   //String[] fontList = PFont.list(); //To list all fonts available on OS
   //printArray(fontList); //For listing all possible fonts to choose from, then createFont
-  fontI = createFont("Harrington", 55); //Verify the font exists in Processing.Java
+  fontI = createFont("Comic Sans MS", 55); //Verify the font exists in Processing.Java
   // Tools / Create Font / Find Font / Do not press "OK", known bug
   //
   }
@@ -21,9 +22,23 @@ void spaceBarText() {
   int size = 20; //Change the number until it fits
   textFont(fontI, size); 
   text( spaceBar, startButtonX, startButtonY, startButtonWidth, startButtonHeight );
-  fill(resetDefaultInk);
+  noFill();
+  //fill(resetDefaultInk);
   noStroke();
   //
 } //end spaceBarText
+void quitButtonText() {
+  //
+  //rect(quitX, quitY, quitWidth, quitHeight); //quit BUTTON
+  fill(green); //Ink, hexidecimal copied from Color Selector
+  textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+  int size = 20; //Change the number until it fits
+  textFont(fontI, size); 
+  text( quit, quitX, quitY, quitWidth, quitHeight);
+  noFill();
+  //fill(white);
+  //
+} //end quitButtonText
 //
 //End text subprogram

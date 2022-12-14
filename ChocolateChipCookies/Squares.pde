@@ -9,15 +9,15 @@ float bottomRightX,bottomRightY,bottomRightWidth,bottomRightHeight;
 float bottomSquareX,bottomSquareY,bottomSquareWidth,bottomSquareHeight;
 //
 void nineSquares() {
-  rect( topLeftX, topLeftY, topLeftWidth, topLeftHeight);
-  rect(topRightX, topRightY, topRightWidth, topRightHeight);
-  rect(topSquareX, topSquareY, topSquareWidth, topSquareHeight);
-  rect(leftSquareX,leftSquareY,leftSquareWidth,leftSquareHeight);
-  rect(rightSquareX,rightSquareY,rightSquareWidth,rightSquareHeight);
-  rect(middleSquareX,middleSquareY,middleSquareWidth,middleSquareHeight);
-  rect(bottomLeftX,bottomLeftY,bottomLeftWidth,bottomLeftHeight);
-  rect(bottomRightX,bottomRightY,bottomRightWidth,bottomRightHeight);
-  rect(bottomSquareX,bottomSquareY,bottomSquareWidth,bottomSquareHeight);
+  //rect( topLeftX, topLeftY, topLeftWidth, topLeftHeight); //open later closed for testing
+ // rect(topRightX, topRightY, topRightWidth, topRightHeight);
+  //rect(topSquareX, topSquareY, topSquareWidth, topSquareHeight);
+ // rect(leftSquareX,leftSquareY,leftSquareWidth,leftSquareHeight);
+  //rect(rightSquareX,rightSquareY,rightSquareWidth,rightSquareHeight);
+  //rect(middleSquareX,middleSquareY,middleSquareWidth,middleSquareHeight);
+  //rect(bottomLeftX,bottomLeftY,bottomLeftWidth,bottomLeftHeight);
+  //rect(bottomRightX,bottomRightY,bottomRightWidth,bottomRightHeight);
+  //rect(bottomSquareX,bottomSquareY,bottomSquareWidth,bottomSquareHeight);
 }//end squares
 //
 //end sqaures subprogram

@@ -1,4 +1,5 @@
 float backgroundX, backgroundY, backgroundWidth, backgroundHeight;
+float quitX, quitY, quitWidth, quitHeight;
 int tintDayMode=255, tintDayModeOpacity=50;
 int tintRed=64, tintGreen=64, tintBlue=0, tintNightModeOpacity=85; //blue might change, starts at zero
 //
@@ -14,6 +15,14 @@ void homeScreen() { //Exists in VOID DRAW
    - See case study
    - Note: must have one image with aspect ratio
    */
+     if (mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight) {
+     fill(white);
+       rect(quitX, quitY, quitWidth, quitHeight); //testing only
+       noFill();
+     } else {
+     quitButtonText();
+   }
+     rect(quitX, quitY, quitWidth, quitHeight); //quit BUTTON
    //
 }//End Home Screen
  
@@ -28,8 +37,13 @@ void homeScreen() { //Exists in VOID DRAW
    //
    void backgroundImage() {
     backgroundWhiteScreen();
-    tint(tintDayMode, tintDayModeOpacity); 
-    //tint(tintRed, tintGreen, tintBlue, tintNightModeOpacity); 
+    //control night mode, colour with ternary operator
+    if(nightMode==true) {
+    tint(tintRed, tintGreen, tintBlue, tintNightModeOpacity);
+    } else {
+    tint(tintDayMode, tintDayModeOpacity);
+    }
+    //end nightMode control
     image(backgroundImage, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
     //image with tint()
    }//end background Image
