@@ -2,6 +2,7 @@ float backgroundX, backgroundY, backgroundWidth, backgroundHeight;
 float quitX, quitY, quitWidth, quitHeight;
 int tintDayMode=255, tintDayModeOpacity=50;
 int tintRed=64, tintGreen=64, tintBlue=0, tintNightModeOpacity=85; //blue might change, starts at zero
+float quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight;
 //
 void homeScreen() { //Exists in VOID DRAW
    println("Arrived at Start Home Screen"); //testing for splash screen 
@@ -16,9 +17,11 @@ void homeScreen() { //Exists in VOID DRAW
    - Note: must have one image with aspect ratio
    */
      if (mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight) {
-     fill(white);
+    /* fill(white); //testing
        rect(quitX, quitY, quitWidth, quitHeight); //testing only
-       noFill();
+       noFill(); //testing
+       */
+       quitButtonImage(); //in aspect ratio
      } else {
      quitButtonText();
    }
