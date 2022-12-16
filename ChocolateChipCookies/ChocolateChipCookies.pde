@@ -2,14 +2,14 @@
 int appWidth, appHeight, largerDimension, smallerDimension;
 Boolean OS_On=false, splashScreenStart=false; 
 Boolean nightMode=false; //bonus1: populate with system clock
-color resetDefaultInk=#000000, white=#FFFFFF, green=#5BDE00; 
+color resetDefaultInk=#000000, white=#FFFFFF, green=#2C6A00; 
   /* nightMode comments
-  green is nightMode friendly
+  green is nightMode friendly?
   resetDefaultInk is nightMode friendly
   */
 //
 void setup () {
-   size(1000,800);
+   size(900,901);
    //fullScreen(); //uses displayWidth, displayHeight
    appWidth = width;
    appHeight = height;
@@ -55,6 +55,7 @@ void keyPressed () {
 void mousePressed () {
   //OS Level MouseClick
   if (OS_On==false) OS_On=true;//End OS level MouseClick
+  if (splashScreenStart==true)
   if (mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight) exit();
   //
 }//End mousePressed

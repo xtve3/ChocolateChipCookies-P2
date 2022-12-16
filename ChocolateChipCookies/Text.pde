@@ -16,7 +16,7 @@ void spaceBarText() {
   //
   noStroke();
   rect(startButtonX, startButtonY, startButtonWidth, startButtonHeight);
-  fill(green); //Ink, hexidecimal copied from Color Selector
+  fill(#16FA03); //Ink, hexidecimal copied from Color Selector
   textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
   int size = 20; //Change the number until it fits
@@ -30,7 +30,9 @@ void spaceBarText() {
 void quitButtonText() {
   //
   //rect(quitX, quitY, quitWidth, quitHeight); //quit BUTTON
-  fill(green); //Ink, hexidecimal copied from Color Selector
+  //color ink = (nightMode==true) ? [true] : [false] ; //ternary operator
+  color ink = (nightMode==true) ? green : #0FB1FF ;
+  fill(ink); //Ink, hexidecimal copied from Color Selector
   textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
   int size = 20; //Change the number until it fits
