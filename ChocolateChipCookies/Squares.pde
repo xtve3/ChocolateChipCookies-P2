@@ -1,3 +1,5 @@
+float greyScreenRectX,greyScreenRectY,greyScreenRectWidth,greyScreenRectHeight;
+Boolean bottomLeft=true, bottomRight=false, bottomSquare=false, topLeft=true, topRight=false, topSquare=true, leftSquare=false, rightSquare=false, middleSquare=false;
 float topLeftX, topLeftY, topLeftWidth, topLeftHeight;
 float topRightX, topRightY, topRightWidth, topRightHeight;
 float topSquareX, topSquareY, topSquareWidth, topSquareHeight;
@@ -8,25 +10,65 @@ float bottomLeftX,bottomLeftY,bottomLeftWidth,bottomLeftHeight;
 float bottomRightX,bottomRightY,bottomRightWidth,bottomRightHeight; 
 float bottomSquareX,bottomSquareY,bottomSquareWidth,bottomSquareHeight;
 //
-void nineSquares() {
+float topLeftCoverX, topLeftCoverY, topLeftCoverWidth, topLeftCoverHeight;
+float topRightCoverX, topRightCoverY, topRightCoverWidth, topRightCoverHeight;
+float topSquareCoverX, topSquareCoverY, topSquareCoverWidth, topSquareCoverHeight;
+float leftSquareCoverX, leftSquareCoverY, leftSquareCoverWidth, leftSquareCoverHeight;
+float rightSquareCoverX, rightSquareCoverY, rightSquareCoverWidth, rightSquareCoverHeight;
+float middleSquareCoverX, middleSquareCoverY, middleSquareCoverWidth, middleSquareCoverHeight;
+float bottomLeftCoverX, bottomLeftCoverY, bottomLeftCoverWidth, bottomLeftCoverHeight;
+float bottomRightCoverX, bottomRightCoverY, bottomRightCoverWidth, bottomRightCoverHeight;
+float bottomSquareCoverX, bottomSquareCoverY, bottomSquareCoverWidth, bottomSquareCoverHeight;
+//
+void beginTheStory() {
+  rect(greyScreenRectX,greyScreenRectY,greyScreenRectWidth,greyScreenRectHeight);
+  text(greyScreenText ,greyScreenRectX,greyScreenRectY,greyScreenRectWidth,greyScreenRectHeight);
+}//end beginthestory
+//
+void topLeftSquare() {
   noFill();
   rect( topLeftX, topLeftY, topLeftWidth, topLeftHeight); 
-  noFill();
+  if(topLeft==true)fill(green); rect(topLeftX, topLeftY, topLeftWidth, topLeftHeight);
+}//end topLeftSquare
+//
+ void topRightSquare () {
+ if(topRight==true)noFill();
   rect(topRightX, topRightY, topRightWidth, topRightHeight);
-  noFill();
+ }// end topRightSquare
+ //
+ void topMiddleSquare () {
+  if(topSquare==true)noFill();
   rect(topSquareX, topSquareY, topSquareWidth, topSquareHeight);
-  noFill();
+ }//end topmiddleSquare
+ //
+ void leftSquare () {
+  if(leftSquare==true)noFill();
   rect(leftSquareX,leftSquareY,leftSquareWidth,leftSquareHeight);
-  noFill();
+ }//end leftsquare
+ //
+ void rightSquare () {
+   if(rightSquare==true)noFill();
   rect(rightSquareX,rightSquareY,rightSquareWidth,rightSquareHeight);
-  noFill();
+ }//end rightsquare
+ //
+ void middleSquare() {
+  if(middleSquare==true)noFill();
   rect(middleSquareX,middleSquareY,middleSquareWidth,middleSquareHeight);
-  noFill();
+ }//end middleSquare
+ //
+ void bottomLeftSquare () {
+  if(bottomLeft==true)noFill();
   rect(bottomLeftX,bottomLeftY,bottomLeftWidth,bottomLeftHeight);
-  noFill();
+ }//end bottomleftsquare
+ //
+ void bottomRightSquare () {
+  if(bottomRight==true)noFill();
   rect(bottomRightX,bottomRightY,bottomRightWidth,bottomRightHeight);
-  noFill();
+ }//end bottomrightsquare
+ //
+ void bottomSquare() {
+ if(bottomSquare==true)noFill();
   rect(bottomSquareX,bottomSquareY,bottomSquareWidth,bottomSquareHeight);
-}//end squares
+ }//end bottomSquare
 //
 //end sqaures subprogram

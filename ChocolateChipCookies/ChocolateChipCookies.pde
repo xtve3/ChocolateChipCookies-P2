@@ -24,10 +24,19 @@ void setup () {
 }//End setup
 //
 void draw () {
+
   //Assignment #2 OS level mouse click and splash screen 
-  if (OS_On==true && splashScreenStart==false) splashScreen(); ; //OS level MOUSE click
+  if (OS_On==true && splashScreenStart==false) splashScreen(); //OS level MOUSE click
   if (splashScreenStart==true) homeScreen();
-  if (splashScreenStart==true) nineSquares();
+  if (splashScreenStart==true) topLeftSquare(); 
+  topRightSquare(); 
+  topMiddleSquare(); 
+  leftSquare(); 
+  rightSquare(); 
+  middleSquare();
+  bottomLeftSquare();
+  bottomRightSquare();
+  bottomSquare();
 }//End draw
 //
 void keyPressed () {

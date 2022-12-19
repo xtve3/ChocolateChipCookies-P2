@@ -21,6 +21,7 @@ void quitButtonImage() {
   //
   //Image dimensions
   int quitButtonImageWidth=2400, quitButtonImageHeight=1800; 
+  noStroke();
   rect(quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight);
   //following variables underneath must be populated or else debugging error
   float quitButtonImageWidth_Adjusted=0.0, quitButtonImageHeight_Adjusted=0.0;
@@ -41,6 +42,7 @@ void quitButtonImage() {
     float centerX=appWidth*1/2;
     quitButtonImageRectX = centerX - quitButtonImageWidth_Adjusted * 1/2;
     imageTintNightMode();
+    noStroke();
     image( quitButtonImage, quitButtonImageRectX, quitButtonImageRectY, quitButtonImageWidth_Adjusted, quitButtonImageHeight_Calculated );
     //
   } else {//Portrait
@@ -56,6 +58,7 @@ void quitButtonImage() {
     float centerX=appWidth*1/2;
     quitButtonImageRectX = centerX - quitButtonImageWidth_Calculated * 1/2;
     imageTintNightMode();
+    noStroke();
     image( quitButtonImage, quitButtonImageRectX, quitButtonImageRectY, quitButtonImageWidth_Calculated, quitButtonImageHeight_Adjusted );
   }
 }//end quitbuttonimage

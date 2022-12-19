@@ -1,5 +1,6 @@
+String greyScreenText = "Click to begin";
 String spaceBar = "Press the Space Bar to continue";
-String quit = "Quit";
+String quit = "Get me out!!!";
 PFont fontI;
   void textSetup() { //end textSetup
   //Minimum expectation is SINGLE FONT
