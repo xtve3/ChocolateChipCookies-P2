@@ -1,5 +1,6 @@
 float greyScreenRectX,greyScreenRectY,greyScreenRectWidth,greyScreenRectHeight;
 Boolean bottomLeft=true, bottomRight=false, bottomSquare=false, topLeft=true, topRight=false, topSquare=true, leftSquare=false, rightSquare=false, middleSquare=false;
+//
 float topLeftX, topLeftY, topLeftWidth, topLeftHeight;
 float topRightX, topRightY, topRightWidth, topRightHeight;
 float topSquareX, topSquareY, topSquareWidth, topSquareHeight;
