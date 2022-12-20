@@ -1,10 +1,10 @@
 void display () {
-     //Concatenation
+  //Concatenation
   println("\t\t\tWidth="+width, "\tHeight="+height); //key variables
   println("Display Monitor:", "\twidth="+displayWidth, "& height="+displayHeight);
   //
   //Ternary Operator
-  String ls="Landscape or Square", p="portrait", DO="Display Orientation", instruct="Bruh turn ur phone";
+  String ls="Landscape or Square", p="portrait", DO="Display Orientation", instruct="Your in portrait mode lol";
   //String orientation = ( appWidth >= appHeight ) ? ls : p;
   //println (DO, orientation);
   if ( appWidth < appHeight ) { //Declare Landscape Mode
@@ -18,15 +18,15 @@ void display () {
     } else {
       println("lmao you broke it stop");
     }
-      if (appWidth >= appHeight) {
-  appWidth = largerDimension;
-  appHeight = smallerDimension;
-  println("\t\tLandscape mode");
-  } else {
-  appHeight = largerDimension;
-  appWidth = smallerDimension;
-  println("\t\tPortrait mode");
-  }
+    if (appWidth >= appHeight) {
+      appWidth = largerDimension;
+      appHeight = smallerDimension;
+      println("\t\tLandscape mode");
+    } else {
+      appHeight = largerDimension;
+      appWidth = smallerDimension;
+      println("\t\tPortrait mode");
+    }
   }
 }//end display
 //

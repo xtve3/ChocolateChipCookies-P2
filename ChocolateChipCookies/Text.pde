@@ -2,7 +2,7 @@ String greyScreenText = "Click to begin";
 String spaceBar = "Press the Space Bar to continue";
 String quit = "Get me out!!!";
 PFont fontI;
-  void textSetup() { //end textSetup
+void textSetup() { //end textSetup
   //Minimum expectation is SINGLE FONT
   //
   //One Font only here
@@ -12,7 +12,7 @@ PFont fontI;
   fontI = createFont("Comic Sans MS", 55); //Verify the font exists in Processing.Java
   // Tools / Create Font / Find Font / Do not press "OK", known bug
   //
-  }
+}
 void spaceBarText() {
   //
   noStroke();

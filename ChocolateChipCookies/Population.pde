@@ -21,10 +21,10 @@ void population() {
   quitButtonImageRectWidth = quitWidth * 5/6; //Origonal needs debugging to adjust
   quitButtonImageRectHeight = quitHeight;
   //
-  greyScreenRectX = appWidth * 1/2.4;
-  greyScreenRectY = appHeight * 1/10;
-  greyScreenRectWidth = appWidth * 1/6;
-  greyScreenRectHeight = appHeight * 1/6;
+  //greyScreenRectX = appWidth * 1/2.4;
+  //greyScreenRectY = appHeight * 1/10;
+  //greyScreenRectWidth = appWidth * 1/6;
+  //greyScreenRectHeight = appHeight * 1/6;
   //
   topLeftX = appWidth * 0;
   topLeftY = appHeight * 0;
@@ -70,6 +70,51 @@ void population() {
   bottomSquareY = appHeight * 2/3;
   bottomSquareWidth = appWidth * 1/3;
   bottomSquareHeight = appHeight * 1/3;
+  //
+  topLeftCoverX = appWidth * 0;
+  topLeftCoverY = appHeight * 0;
+  topLeftCoverWidth = appWidth * 1/3;
+  topLeftCoverHeight = appHeight * 1/3;
+  //
+  topRightCoverX = appWidth * 2/3;
+  topRightCoverY = appHeight * 0;
+  topRightCoverWidth = appWidth * 1/3;
+  topRightCoverHeight = appHeight * 1/3;
+  // 
+  topSquareCoverX = appWidth * 1/3;
+  topSquareCoverY = appHeight * 0;
+  topSquareCoverWidth = appWidth * 1/3;
+  topSquareCoverHeight = appHeight * 1/3;
+  //
+  leftSquareCoverX = appWidth * 0;
+  leftSquareCoverY = appHeight * 1/3;
+  leftSquareCoverWidth = appWidth * 1/3;
+  leftSquareCoverHeight = appHeight * 1/3;
+  //
+  rightSquareCoverX = appWidth * 2/3;
+  rightSquareCoverY = appHeight * 1/3;
+  rightSquareCoverWidth = appWidth * 1/3;
+  rightSquareCoverHeight = appHeight * 1/3;
+  //
+  middleSquareCoverX = appWidth * 1/3;
+  middleSquareCoverY = appHeight * 1/3;
+  middleSquareCoverWidth = appWidth * 1/3;
+  middleSquareCoverHeight = appHeight * 1/3;
+  //
+  bottomLeftCoverX = appWidth * 0;
+  bottomLeftCoverY = appHeight * 2/3;
+  bottomLeftCoverWidth = appWidth * 1/3;
+  bottomLeftCoverHeight = appHeight * 1/3;
+  //
+  bottomRightCoverX = appWidth * 2/3;
+  bottomRightCoverY = appHeight * 2/3;
+  bottomRightCoverWidth = appWidth * 1/3;
+  bottomRightCoverHeight = appHeight * 1/3;
+  //
+  bottomSquareCoverX = appWidth * 1/3;
+  bottomSquareCoverY = appHeight * 2/3;
+  bottomSquareCoverWidth = appWidth * 1/3;
+  bottomSquareCoverHeight = appHeight * 1/3;
   //
 }//end population
 //

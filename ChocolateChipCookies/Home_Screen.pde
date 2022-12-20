@@ -1,11 +1,11 @@
 float backgroundX, backgroundY, backgroundWidth, backgroundHeight;
 float quitX, quitY, quitWidth, quitHeight;
-int tintDayMode=255, tintDayModeOpacity=50;
-int tintRed=64, tintGreen=64, tintBlue=0, tintNightModeOpacity=85; //blue might change, starts at zero
+int tintDayMode=255, tintDayModeOpacity=1000;
+int tintRed=64, tintGreen=64, tintBlue=0, tintNightModeOpacity=500; //blue might change, starts at zero
 float quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight;
 //
 void homeScreen() { //Exists in VOID DRAW
-  println("Arrived at Start Home Screen"); //testing for splash screen 
+  //println("Arrived at Start Home Screen"); //testing for splash screen 
   //
   /* Home Screen Expectations
    - Background Image using tint()
