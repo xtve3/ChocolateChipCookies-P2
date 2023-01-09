@@ -32,7 +32,7 @@ void quitButtonText() {
   //
   //rect(quitX, quitY, quitWidth, quitHeight); //quit BUTTON
   //color ink = (nightMode==true) ? [true] : [false] ; //ternary operator
-  color ink = (nightMode==true) ? green : #0FB1FF ;
+  color ink = (nightMode==true) ? green : #FF2727 ;
   fill(ink); //Ink, hexidecimal copied from Color Selector
   textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]

@@ -20,9 +20,7 @@ void homeScreen() { //Exists in VOID DRAW
     noFill();
     noStroke();
     rect( quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight );
-    noFill();
     imageTintNightMode();
-    noStroke();
     quitButtonImage(); //in aspect ratio
     quitButtonText();
   } else {
