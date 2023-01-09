@@ -21,52 +21,97 @@ float bottomRightCoverX, bottomRightCoverY, bottomRightCoverWidth, bottomRightCo
 float bottomSquareCoverX, bottomSquareCoverY, bottomSquareCoverWidth, bottomSquareCoverHeight;
 //
 void topLeftSquare() {
-  if (topLeft==true) {
+  if (topLeft==true && nightMode==false) { //dayMode version
     fill(grey); 
     rect(topLeftCoverX, topLeftCoverY, topLeftCoverWidth, topLeftCoverHeight);
-  } else {
-    noFill(); 
-    rect(topLeftX, topLeftY, topLeftWidth, topLeftHeight);
+  } 
+  if (topLeft==false && nightMode==false) {
+    noFill();
+    rect(topLeftCoverX, topLeftCoverY, topLeftCoverWidth, topLeftCoverHeight);
+  }
+    if (topLeft==true && nightMode==true) { //nightMode version
+    fill(resetDefaultInk); 
+    rect(topLeftCoverX, topLeftCoverY, topLeftCoverWidth, topLeftCoverHeight);
+  } 
+  if (topLeft==false && nightMode==true) {
+    noFill();
+    rect(topLeftCoverX, topLeftCoverY, topLeftCoverWidth, topLeftCoverHeight);
   }
 }//end topLeftSquare
 //
 void topRightSquare () {
-  if (topRight==true) {
+  if (topRight==true && nightMode==false) { //dayMode version
     fill(grey); 
     rect(topRightCoverX, topRightCoverY, topRightCoverWidth, topRightCoverHeight);
-  } else {
+  } 
+  if (topRight==false && nightMode==false) {
     noFill();
-    rect(topRightX, topRightY, topRightWidth, topRightHeight);
+    rect(topRightCoverX, topRightCoverY, topRightCoverWidth, topRightCoverHeight);
+  }
+   if (topRight==true && nightMode==true) { //nightMode version
+    fill(resetDefaultInk); 
+    rect(topRightCoverX, topRightCoverY, topRightCoverWidth, topRightCoverHeight);
+  } 
+  if (topRight==false && nightMode==true) {
+    noFill();
+    rect(topRightCoverX, topRightCoverY, topRightCoverWidth, topRightCoverHeight);
   }
 }// end topRightSquare
 //
 void topMiddleSquare () {
-  if (topSquare==true) {
+  if (topSquare==true && nightMode==false) { //dayMode version
     fill(grey); 
     rect(topSquareCoverX, topSquareCoverY, topSquareCoverWidth, topSquareCoverHeight);
-  } else {
+  } 
+  if (topSquare==false && nightMode==false) {
     noFill();
-    rect(topSquareX, topSquareY, topSquareWidth, topSquareHeight);
+    rect(topSquareCoverX, topSquareCoverY, topSquareCoverWidth, topSquareCoverHeight);
+  }
+    if (topSquare==true && nightMode==true) { //nightMode version
+    fill(resetDefaultInk); 
+    rect(topSquareCoverX, topSquareCoverY, topSquareCoverWidth, topSquareCoverHeight);
+  } 
+  if (topSquare==false && nightMode==true) {
+    noFill();
+    rect(topSquareCoverX, topSquareCoverY, topSquareCoverWidth, topSquareCoverHeight);
   }
 }//end topmiddleSquare
 //
 void leftSquare () {
-  if (leftSquare==true) {
+  if (leftSquare==true && nightMode==false) { //dayMode version
     fill(grey); 
     rect(leftSquareCoverX, leftSquareCoverY, leftSquareCoverWidth, leftSquareCoverHeight);
-  } else {
+  } 
+  if (leftSquare==false && nightMode==false) {
     noFill();
-    rect(leftSquareX, leftSquareY, leftSquareWidth, leftSquareHeight);
+    rect(leftSquareCoverX, leftSquareCoverY, leftSquareCoverWidth, leftSquareCoverHeight);
+  }
+    if (leftSquare==true && nightMode==true) { //nightMode version
+    fill(resetDefaultInk); 
+    rect(leftSquareCoverX, leftSquareCoverY, leftSquareCoverWidth, leftSquareCoverHeight);
+  } 
+  if (leftSquare==false && nightMode==true) {
+    noFill();
+    rect(leftSquareCoverX, leftSquareCoverY, leftSquareCoverWidth, leftSquareCoverHeight);
   }
 }//end leftsquare
 //
 void rightSquare () {
-  if (rightSquare==true) {
+  if (rightSquare==true && nightMode==false) { //dayMode version
     fill(grey); 
     rect(rightSquareCoverX, rightSquareCoverY, rightSquareCoverWidth, rightSquareCoverHeight);
-  } else {
+  } 
+  if (rightSquare==false && nightMode==false) {
     noFill();
-    rect(rightSquareX, rightSquareY, rightSquareWidth, rightSquareHeight);
+    rect(rightSquareCoverX, rightSquareCoverY, rightSquareCoverWidth, rightSquareCoverHeight);
+  }
+   if (rightSquare==true && nightMode==true) { //nightMode version
+    fill(resetDefaultInk); 
+    rect(rightSquareCoverX, rightSquareCoverY, rightSquareCoverWidth, rightSquareCoverHeight);
+  } 
+  if (rightSquare==false && nightMode==true) {
+    noFill();
+    rect(rightSquareCoverX, rightSquareCoverY, rightSquareCoverWidth, rightSquareCoverHeight);
   }
 }//end rightsquare
 //
