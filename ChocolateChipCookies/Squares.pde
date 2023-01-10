@@ -1,8 +1,9 @@
-Boolean bottomLeft=true, bottomRight=true, bottomSquare=true, topLeft=true, topRight=true, topSquare=false, leftSquare=true, rightSquare=true, middleSquare=true;
+Boolean bottomLeft=false, bottomRight=false, bottomSquare=false, topLeft=false, topRight=false, topSquare=false, leftSquare=false, rightSquare=false, middleSquare=false;
 //
 float topLeftX, topLeftY, topLeftWidth, topLeftHeight;
 float topRightX, topRightY, topRightWidth, topRightHeight;
-float topSquareX, topSquareY, topSquareWidth, topSquareHeight;
+float topSquareX1, topSquareY1, topSquareWidth1, topSquareHeight1;
+float topSquareX2, topSquareY2, topSquareWidth2, topSquareHeight2;
 float leftSquareX, leftSquareY, leftSquareWidth, leftSquareHeight;
 float rightSquareX, rightSquareY, rightSquareWidth, rightSquareHeight;
 float middleSquareX, middleSquareY, middleSquareWidth, middleSquareHeight;
@@ -28,6 +29,8 @@ void topLeftSquare() {
   if (topLeft==false && nightMode==false) {
     noFill();
     rect(topLeftCoverX, topLeftCoverY, topLeftCoverWidth, topLeftCoverHeight);
+    noFill();
+    rect(topLeftX, topLeftY, topLeftWidth, topLeftHeight);
   }
     if (topLeft==true && nightMode==true) { //nightMode version
     fill(resetDefaultInk); 
@@ -66,6 +69,12 @@ void topMiddleSquare () {
   if (topSquare==false && nightMode==false) {
     noFill();
     rect(topSquareCoverX, topSquareCoverY, topSquareCoverWidth, topSquareCoverHeight);
+    noFill();
+    rect(topSquareX1, topSquareY1, topSquareWidth1, topSquareHeight1);
+    topSquare1Text();
+    noFill();
+    rect(topSquareX2, topSquareY2, topSquareWidth2, topSquareHeight2);
+    topSquare2Text();
   }
     if (topSquare==true && nightMode==true) { //nightMode version
     fill(resetDefaultInk); 
@@ -74,6 +83,12 @@ void topMiddleSquare () {
   if (topSquare==false && nightMode==true) {
     noFill();
     rect(topSquareCoverX, topSquareCoverY, topSquareCoverWidth, topSquareCoverHeight);
+    noFill();
+    rect(topSquareX1, topSquareY1, topSquareWidth1, topSquareHeight1);
+    topSquare1Text();
+    noFill();
+    rect(topSquareX2, topSquareY2, topSquareWidth2, topSquareHeight2);
+    topSquare2Text();
   }
 }//end topmiddleSquare
 //

@@ -28,10 +28,10 @@ void draw () {
 
   //Assignment #2 OS level mouse click and splash screen 
   if (OS_On==true && splashScreenStart==false) splashScreen(); //OS level MOUSE click
+  if (splashScreenStart==true) topMiddleSquare(); 
   if (splashScreenStart==true) homeScreen();
   if (splashScreenStart==true) topLeftSquare(); 
   if (splashScreenStart==true) topRightSquare(); 
-  if (splashScreenStart==true) topMiddleSquare(); 
   if (splashScreenStart==true) leftSquare(); 
   if (splashScreenStart==true) rightSquare(); 
   if (splashScreenStart==true) middleSquare();

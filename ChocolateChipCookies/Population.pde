@@ -36,10 +36,15 @@ void population() {
   topRightWidth = appWidth * 1/3;
   topRightHeight = appHeight * 1/3;
   // 
-  topSquareX = appWidth * 1/3;
-  topSquareY = appHeight * 0;
-  topSquareWidth = appWidth * 1/3;
-  topSquareHeight = appHeight * 1/3;
+  topSquareX1 = appWidth * 300/900;
+  topSquareY1 = appHeight * 1/4;
+  topSquareWidth1 = appWidth * 1/8;
+  topSquareHeight1 = appHeight * 1/12;
+  //
+  topSquareX2 = appWidth * 488/900;
+  topSquareY2 = appHeight * 1/4;
+  topSquareWidth2 = appWidth * 1/8;
+  topSquareHeight2 = appHeight * 1/12;
   //
   leftSquareX = appWidth * 0;
   leftSquareY = appHeight * 1/3;
