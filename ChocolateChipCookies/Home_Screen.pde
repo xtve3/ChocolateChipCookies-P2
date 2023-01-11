@@ -16,9 +16,9 @@ void homeScreen() { //Exists in VOID DRAW
    - See case study
    - Note: must have one image with aspect ratio
    */
-  if (mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight) {
+  if ( mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight) {
     noFill();
-    noStroke();
+    //noStroke();
     rect( quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight );
     imageTintNightMode();
     quitButtonImage(); //in aspect ratio

@@ -1,7 +1,7 @@
 PImage backgroundImage, quitButtonImage;
 //
 void imageSetup() { //could be reguarded as image population
-  backgroundImage=loadImage("../Images Used/SumeruCityy.JPG");
+  backgroundImage=loadImage("../Images Used/smilelaugh.jpg");
   quitButtonImage=loadImage("../Images Used/tesla.jpg");
 }//end imageSetup
 void imageTintNightMode () {
@@ -21,7 +21,7 @@ void quitButtonImage() {
   //
   //Image dimensions
   int quitButtonImageWidth=2400, quitButtonImageHeight=1800; 
-  noStroke();
+  //noStroke();
   rect(quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight);
   //following variables underneath must be populated or else debugging error
   float quitButtonImageWidth_Adjusted=0.0, quitButtonImageHeight_Adjusted=0.0;
@@ -42,7 +42,7 @@ void quitButtonImage() {
     float centerX=appWidth*1/2;
     quitButtonImageRectX = centerX - quitButtonImageWidth_Adjusted * 1/2;
     imageTintNightMode();
-    noStroke();
+    //noStroke();
     image( quitButtonImage, quitButtonImageRectX, quitButtonImageRectY, quitButtonImageWidth_Adjusted, quitButtonImageHeight_Calculated );
     //
   } else {//Portrait

@@ -1,14 +1,29 @@
 Boolean bottomLeft=false, bottomRight=false, bottomSquare=false, topLeft=false, topRight=false, topSquare=false, leftSquare=false, rightSquare=false, middleSquare=false;
 //
-float topLeftX, topLeftY, topLeftWidth, topLeftHeight;
-float topRightX, topRightY, topRightWidth, topRightHeight;
+float topLeftX0, topLeftY0, topLeftWidth0, topLeftHeight0;
+float topLeftX1, topLeftY1, topLeftWidth1, topLeftHeight1;
+float topLeftX2, topLeftY2, topLeftWidth2, topLeftHeight2;
+//
+float topRightX0, topRightY0, topRightWidth0, topRightHeight0;
+float topRightX1, topRightY1, topRightWidth1, topRightHeight1;
+float topRightX2, topRightY2, topRightWidth2, topRightHeight2;
+//
+float topSquareX0, topSquareY0, topSquareWidth0, topSquareHeight0;
 float topSquareX1, topSquareY1, topSquareWidth1, topSquareHeight1;
 float topSquareX2, topSquareY2, topSquareWidth2, topSquareHeight2;
-float leftSquareX, leftSquareY, leftSquareWidth, leftSquareHeight;
+//
+float leftSquareX0, leftSquareY0, leftSquareWidth0, leftSquareHeight0;
+float leftSquareX1, leftSquareY1, leftSquareWidth1, leftSquareHeight1;
+float leftSquareX2, leftSquareY2, leftSquareWidth2, leftSquareHeight2;
+//
 float rightSquareX, rightSquareY, rightSquareWidth, rightSquareHeight;
+//
 float middleSquareX, middleSquareY, middleSquareWidth, middleSquareHeight;
+//
 float bottomLeftX, bottomLeftY, bottomLeftWidth, bottomLeftHeight;
+//
 float bottomRightX, bottomRightY, bottomRightWidth, bottomRightHeight; 
+//
 float bottomSquareX, bottomSquareY, bottomSquareWidth, bottomSquareHeight;
 //
 float topLeftCoverX, topLeftCoverY, topLeftCoverWidth, topLeftCoverHeight;
@@ -30,15 +45,31 @@ void topLeftSquare() {
     noFill();
     rect(topLeftCoverX, topLeftCoverY, topLeftCoverWidth, topLeftCoverHeight);
     noFill();
-    rect(topLeftX, topLeftY, topLeftWidth, topLeftHeight);
+    rect(topLeftX0, topLeftY0, topLeftWidth0, topLeftHeight0);
+    topLeft0Text();
+    noFill();
+    rect(topLeftX1, topLeftY1, topLeftWidth1, topLeftHeight1);
+    topLeft1Text();
+    noFill();
+    rect(topLeftX2, topLeftY2, topLeftWidth2, topLeftHeight2);
+    topLeft2Text();
   }
-    if (topLeft==true && nightMode==true) { //nightMode version
+  if (topLeft==true && nightMode==true) { //nightMode version
     fill(resetDefaultInk); 
     rect(topLeftCoverX, topLeftCoverY, topLeftCoverWidth, topLeftCoverHeight);
   } 
   if (topLeft==false && nightMode==true) {
     noFill();
     rect(topLeftCoverX, topLeftCoverY, topLeftCoverWidth, topLeftCoverHeight);
+    noFill();
+    rect(topLeftX0, topLeftY0, topLeftWidth0, topLeftHeight0);
+    topLeft0Text();
+    noFill();
+    rect(topLeftX1, topLeftY1, topLeftWidth1, topLeftHeight1);
+    topLeft1Text();
+    noFill();
+    rect(topLeftX2, topLeftY2, topLeftWidth2, topLeftHeight2);
+    topLeft2Text();
   }
 }//end topLeftSquare
 //
@@ -50,14 +81,32 @@ void topRightSquare () {
   if (topRight==false && nightMode==false) {
     noFill();
     rect(topRightCoverX, topRightCoverY, topRightCoverWidth, topRightCoverHeight);
+    noFill();
+    rect(topRightX0, topRightY0, topRightWidth0, topRightHeight0);
+    topRight0Text();
+    noFill();
+    rect(topRightX1, topRightY1, topRightWidth1, topRightHeight1);
+    topRight1Text();
+    noFill();
+    rect(topRightX2, topRightY2, topRightWidth2, topRightHeight2);
+    topRight2Text();
   }
-   if (topRight==true && nightMode==true) { //nightMode version
+  if (topRight==true && nightMode==true) { //nightMode version
     fill(resetDefaultInk); 
     rect(topRightCoverX, topRightCoverY, topRightCoverWidth, topRightCoverHeight);
   } 
   if (topRight==false && nightMode==true) {
     noFill();
     rect(topRightCoverX, topRightCoverY, topRightCoverWidth, topRightCoverHeight);
+    noFill();
+    rect(topRightX0, topRightY0, topRightWidth0, topRightHeight0);
+    topRight0Text();
+    noFill();
+    rect(topRightX1, topRightY1, topRightWidth1, topRightHeight1);
+    topRight1Text();
+    noFill();
+    rect(topRightX2, topRightY2, topRightWidth2, topRightHeight2);
+    topRight2Text();
   }
 }// end topRightSquare
 //
@@ -70,19 +119,25 @@ void topMiddleSquare () {
     noFill();
     rect(topSquareCoverX, topSquareCoverY, topSquareCoverWidth, topSquareCoverHeight);
     noFill();
+    rect(topSquareX0, topSquareY0, topSquareWidth0, topSquareHeight0);
+    topSquare0Text();
+    noFill();
     rect(topSquareX1, topSquareY1, topSquareWidth1, topSquareHeight1);
     topSquare1Text();
     noFill();
     rect(topSquareX2, topSquareY2, topSquareWidth2, topSquareHeight2);
     topSquare2Text();
   }
-    if (topSquare==true && nightMode==true) { //nightMode version
+  if (topSquare==true && nightMode==true) { //nightMode version
     fill(resetDefaultInk); 
     rect(topSquareCoverX, topSquareCoverY, topSquareCoverWidth, topSquareCoverHeight);
   } 
   if (topSquare==false && nightMode==true) {
     noFill();
     rect(topSquareCoverX, topSquareCoverY, topSquareCoverWidth, topSquareCoverHeight);
+    noFill();
+    rect(topSquareX0, topSquareY0, topSquareWidth0, topSquareHeight0);
+    topSquare0Text();
     noFill();
     rect(topSquareX1, topSquareY1, topSquareWidth1, topSquareHeight1);
     topSquare1Text();
@@ -100,8 +155,10 @@ void leftSquare () {
   if (leftSquare==false && nightMode==false) {
     noFill();
     rect(leftSquareCoverX, leftSquareCoverY, leftSquareCoverWidth, leftSquareCoverHeight);
+    noFill();
+    rect(leftSquareX0, leftSquareY0, leftSquareWidth0, leftSquareHeight0);
   }
-    if (leftSquare==true && nightMode==true) { //nightMode version
+  if (leftSquare==true && nightMode==true) { //nightMode version
     fill(resetDefaultInk); 
     rect(leftSquareCoverX, leftSquareCoverY, leftSquareCoverWidth, leftSquareCoverHeight);
   } 
@@ -120,7 +177,7 @@ void rightSquare () {
     noFill();
     rect(rightSquareCoverX, rightSquareCoverY, rightSquareCoverWidth, rightSquareCoverHeight);
   }
-   if (rightSquare==true && nightMode==true) { //nightMode version
+  if (rightSquare==true && nightMode==true) { //nightMode version
     fill(resetDefaultInk); 
     rect(rightSquareCoverX, rightSquareCoverY, rightSquareCoverWidth, rightSquareCoverHeight);
   } 
