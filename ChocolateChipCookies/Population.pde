@@ -76,44 +76,99 @@ void population() {
   //
   //
   leftSquareX0 = appWidth * 0;
-  leftSquareY0 = appHeight * 365/901; //close not yet though
+  leftSquareY0 = appHeight * 390/901; //close not yet though
   leftSquareWidth0 = appWidth * 1/3;
   leftSquareHeight0 = appHeight * 1.799/12;
   //
   leftSquareX1 = appWidth * 0;
-  leftSquareY1 = appHeight * ;
-  leftSquareWidth1 = appWidth * ;
-  leftSquareHeight1 = appHeight * ;
+  leftSquareY1 = appHeight * 2.915/5;
+  leftSquareWidth1 = appWidth * 1/8;
+  leftSquareHeight1 = appHeight * 1/12;
+  //
+  leftSquareX2 = appWidth * 0.627/3;
+  leftSquareY2 = appHeight * 2.915/5;
+  leftSquareWidth2 = appWidth * 1/8;
+  leftSquareHeight2 = appHeight * 1/12;
   //
   //
-  rightSquareX = appWidth * 2/3;
-  rightSquareY = appHeight * 1/3;
-  rightSquareWidth = appWidth * 1/3;
-  rightSquareHeight = appHeight * 1/3;
+  rightSquareX0 = appWidth * 2/3;
+  rightSquareY0 = appHeight * 390/901;
+  rightSquareWidth0 = appWidth * 1/3;
+  rightSquareHeight0 = appHeight * 1.799/12;
+  //
+  rightSquareX1 = appWidth * 2/3;
+  rightSquareY1 = appHeight * 2.915/5;
+  rightSquareWidth1 = appWidth * 1/8;
+  rightSquareHeight1 = appHeight * 1/12;
+  //
+  rightSquareX2 = appWidth * 2.629/3;
+  rightSquareY2 = appHeight * 2.915/5;
+  rightSquareWidth2 = appWidth * 1/8;
+  rightSquareHeight2 = appHeight * 1/12;
   //
   //
-  middleSquareX = appWidth * 1/3;
-  middleSquareY = appHeight * 1/3;
-  middleSquareWidth = appWidth * 1/3;
-  middleSquareHeight = appHeight * 1/3;
+  middleSquareX0 = appWidth * 1/3;
+  middleSquareY0 = appHeight * 390/901;
+  middleSquareWidth0 = appWidth * 1/3;
+  middleSquareHeight0 = appHeight * 1.799/12;
+  //
+  middleSquareX1 = appWidth * 1/3;
+  middleSquareY1 = appHeight * 2.915/5;
+  middleSquareWidth1 = appWidth * 1/8;
+  middleSquareHeight1 = appHeight * 1/12;
+  //
+  middleSquareX2 = appWidth * 1.629/3;
+  middleSquareY2 = appHeight * 2.915/5;
+  middleSquareWidth2 = appWidth * 1/8;
+  middleSquareHeight2 = appHeight * 1/12;
   //
   //
-  bottomLeftX = appWidth * 0;
-  bottomLeftY = appHeight * 2/3;
-  bottomLeftWidth = appWidth * 1/3;
-  bottomLeftHeight = appHeight * 1/3;
+  bottomLeftX0 = appWidth * 0;
+  bottomLeftY0 = appHeight * 2.298/3;
+  bottomLeftWidth0 = appWidth * 1/3;
+  bottomLeftHeight0 = appHeight * 1.799/12;
+  //
+  bottomLeftX1 = appWidth * 0;
+  bottomLeftY1 = appHeight * 2.747/3;
+  bottomLeftWidth1 = appWidth * 1/8;
+  bottomLeftHeight1 = appHeight * 1/12;
+  //
+  bottomLeftX2 = appWidth * 0.627/3;
+  bottomLeftY2 = appHeight * 2.747/3;
+  bottomLeftWidth2 = appWidth * 1/8;
+  bottomLeftHeight2 = appHeight * 1/12;
   //
   //
-  bottomRightX = appWidth * 2/3;
-  bottomRightY = appHeight * 2/3;
-  bottomRightWidth = appWidth * 1/3;
-  bottomRightHeight = appHeight * 1/3;
+  bottomRightX0 = appWidth * 2/3;
+  bottomRightY0 = appHeight * 2.298/3;
+  bottomRightWidth0 = appWidth * 1/3;
+  bottomRightHeight0 = appHeight * 1.799/12;
+  //
+  bottomRightX1 = appWidth * 2/3;
+  bottomRightY1 = appHeight * 2.747/3;
+  bottomRightWidth1 = appWidth * 1/8; 
+  bottomRightHeight1 = appHeight * 1/12;
+  //
+  bottomRightX2 = appWidth * 2.629/3;
+  bottomRightY2 = appHeight * 2.747/3;
+  bottomRightWidth2 = appWidth * 1/8;
+  bottomRightHeight2 = appHeight * 1/12;
   //
   //
-  bottomSquareX = appWidth * 1/3;
-  bottomSquareY = appHeight * 2/3;
-  bottomSquareWidth = appWidth * 1/3;
-  bottomSquareHeight = appHeight * 1/3;
+  bottomSquareX0 = appWidth * 1/3;
+  bottomSquareY0 = appHeight * 2.298/3;
+  bottomSquareWidth0 = appWidth * 1/3;
+  bottomSquareHeight0 = appHeight * 1.799/12;
+  //
+  bottomSquareX1 = appWidth * 1/3;
+  bottomSquareY1 = appHeight * 2.747/3;
+  bottomSquareWidth1 = appWidth * 1/8;
+  bottomSquareHeight1 = appHeight * 1/12;
+  //
+  bottomSquareX2 = appWidth * 1.629/3;
+  bottomSquareY2 = appHeight * 2.747/3;
+  bottomSquareWidth2 = appWidth * 1/8;
+  bottomSquareHeight2 = appHeight * 1/12;
   //
   //
   topLeftCoverX = appWidth * 0;
