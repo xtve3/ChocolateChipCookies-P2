@@ -219,6 +219,15 @@ void rightSquare () {
   if (rightSquare==false && nightMode==true) {
     noFill();
     rect(rightSquareCoverX, rightSquareCoverY, rightSquareCoverWidth, rightSquareCoverHeight);
+    noFill();
+    rect(rightSquareX0, rightSquareY0, rightSquareWidth0, rightSquareHeight0);
+    right0Text();
+    noFill();
+    rect(rightSquareX1, rightSquareY1, rightSquareWidth1, rightSquareHeight1);
+    right1Text();
+    noFill();
+    rect(rightSquareX2, rightSquareY2, rightSquareWidth2, rightSquareHeight2);
+    right2Text();
   }
 }//end rightsquare
 //
@@ -248,6 +257,15 @@ void middleSquare() {
   if (middleSquare==false && nightMode==true) {
     noFill();
     rect(middleSquareCoverX, middleSquareCoverY, middleSquareCoverWidth, middleSquareCoverHeight);
+    noFill();
+    rect(middleSquareX0, middleSquareY0, middleSquareWidth0, middleSquareHeight0);
+    middle0Text();
+    noFill();
+    rect(middleSquareX1, middleSquareY1, middleSquareWidth1, middleSquareHeight1);
+    middle1Text();
+    noFill();
+    rect(middleSquareX2, middleSquareY2, middleSquareWidth2, middleSquareHeight2);
+    middle2Text();
   }
 }//end middleSquare
 //
@@ -261,10 +279,13 @@ void bottomLeftSquare () {
     rect(bottomLeftCoverX, bottomLeftCoverY, bottomLeftCoverWidth, bottomLeftCoverHeight);
     noFill();
     rect(bottomLeftX0, bottomLeftY0, bottomLeftWidth0, bottomLeftHeight0);
+    bottomLeft0Text();
     noFill();
     rect(bottomLeftX1, bottomLeftY1, bottomLeftWidth1, bottomLeftHeight1);
+    bottomLeft1Text();
     noFill();
     rect(bottomLeftX2, bottomLeftY2, bottomLeftWidth2, bottomLeftHeight2);
+    bottomLeft2Text();
   }
   //
   if (bottomLeft==true && nightMode==true) { //nightMode version
@@ -276,10 +297,13 @@ void bottomLeftSquare () {
     rect(bottomLeftCoverX, bottomLeftCoverY, bottomLeftCoverWidth, bottomLeftCoverHeight);
     noFill();
     rect(bottomLeftX0, bottomLeftY0, bottomLeftWidth0, bottomLeftHeight0);
+    bottomLeft0Text();
     noFill();
     rect(bottomLeftX1, bottomLeftY1, bottomLeftWidth1, bottomLeftHeight1);
+    bottomLeft1Text();
     noFill();
     rect(bottomLeftX2, bottomLeftY2, bottomLeftWidth2, bottomLeftHeight2);
+    bottomLeft2Text();
   }
 }//end bottomleftsquare
 //
@@ -293,10 +317,13 @@ void bottomRightSquare () {
     rect(bottomRightCoverX, bottomRightCoverY, bottomRightCoverWidth, bottomRightCoverHeight);
     noFill();
     rect(bottomRightX0, bottomRightY0, bottomRightWidth0, bottomRightHeight0);
+    bottomRight0Text();
     noFill();
     rect(bottomRightX1, bottomRightY1, bottomRightWidth1, bottomRightHeight1);
+    bottomRight1Text();
     noFill();
     rect(bottomRightX2, bottomRightY2, bottomRightWidth2, bottomRightHeight2);
+    bottomRight2Text();
   }
   //
   if (bottomRight==true && nightMode==true) { //nightMode version
@@ -306,6 +333,15 @@ void bottomRightSquare () {
   if (bottomRight==false && nightMode==true) {
     noFill();
     rect(bottomRightCoverX, bottomRightCoverY, bottomRightCoverWidth, bottomRightCoverHeight);
+    noFill();
+    rect(bottomRightX0, bottomRightY0, bottomRightWidth0, bottomRightHeight0);
+    bottomRight0Text();
+    noFill();
+    rect(bottomRightX1, bottomRightY1, bottomRightWidth1, bottomRightHeight1);
+    bottomRight1Text();
+    noFill();
+    rect(bottomRightX2, bottomRightY2, bottomRightWidth2, bottomRightHeight2);
+    bottomRight2Text();
   }
 }//end bottomrightsquare
 //
@@ -319,10 +355,13 @@ void bottomSquare() {
     rect(bottomSquareCoverX, bottomSquareCoverY, bottomSquareCoverWidth, bottomSquareCoverHeight);
     noFill();
     rect(bottomSquareX0, bottomSquareY0, bottomSquareWidth0, bottomSquareHeight0);
+    bottomMiddle0Text();
     noFill();
     rect(bottomSquareX1, bottomSquareY1, bottomSquareWidth1, bottomSquareHeight1);
+    bottomMiddle1Text();
     noFill();
     rect(bottomSquareX2, bottomSquareY2, bottomSquareWidth2, bottomSquareHeight2);
+    bottomMiddle2Text();
   }
   //
   if (bottomSquare==true && nightMode==true) { //nightMode version
@@ -332,6 +371,15 @@ void bottomSquare() {
   if (bottomSquare==false && nightMode==true) {
     noFill();
     rect(bottomSquareCoverX, bottomSquareCoverY, bottomSquareCoverWidth, bottomSquareCoverHeight);
+    noFill();
+    rect(bottomSquareX0, bottomSquareY0, bottomSquareWidth0, bottomSquareHeight0);
+    bottomMiddle0Text();
+    noFill();
+    rect(bottomSquareX1, bottomSquareY1, bottomSquareWidth1, bottomSquareHeight1);
+    bottomMiddle1Text();
+    noFill();
+    rect(bottomSquareX2, bottomSquareY2, bottomSquareWidth2, bottomSquareHeight2);
+    bottomMiddle2Text();
   }
 }//end bottomSquare
 //
