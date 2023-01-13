@@ -1,15 +1,15 @@
 String greyScreenText = "Click to begin";
 String spaceBar = "Press the Space Bar to continue";
 String quit = "Get me out!!!";
-String topI = "Left", topII = "Right", topFirst = "You are stuck in a room somehow. You can go either left or right where do you go?";
-String topLeftFirst = "You go to the left and now there is a murderer chasing you, do you go down or hide?", topLeftI = "Hide", topLeftII = "Down";
-String topRightFirst = "Story text topright", topRightI = "option 1 topright", topRightII = "option 2 topright";
-String leftFirst = "story text left", leftI = "option 1 left", leftII = "option 2 left";
-String middleFirst = "story text middle", middleI = "option 1 middle", middleII = "option 2 middle";
-String rightFirst = "story text right", rightI = "option 1 right", rightII = "option 2 right";
-String bottomLeftFirst = "You hide from the murderer and he drops a button. do you press the button or no", bottomLeftI = "option 1 bottomleft", bottomLeftII = "option 2 bottomleft";
-String bottomRightFirst = "story text bottomright", bottomRightI = "option 1 bottomright", bottomRightII = "option 2 bottomright";
-String bottomMiddleFirst = "sotry text bottommiddle", bottomMiddleI = "option 1 bottommiddle", bottomMiddleII = "option 2 bottommiddle";
+String topI = "Go left", topII = "Go right", topFirst = "You are stuck in a room somehow. You can go either left or right where do you go?";
+String topLeftFirst = "You go to the left and now there is a murderer chasing you, do you go down or hide?", topLeftI = "Hide", topLeftII = "Go down";
+String topRightFirst = "you go right and step on a trap which drops a big rolling rock, go left or keep running", topRightI = "Go left", topRightII = "keep running";
+String leftFirst = "You go down a flight of stairs and have to go right or fight back", leftI = "die trying", leftII = "Go right";
+String middleFirst = "You died lol", middleI = "Retry", middleII = "Exit very sad";
+String rightFirst = "you go left and find a button, press the button or sit and cry", rightI = "press cool button", rightII = "give up and sob";
+String bottomLeftFirst = "You hide from the murderer and he drops a button. do you press the button or go right", bottomLeftI = "press it lol", bottomLeftII = "no press go right";
+String bottomRightFirst = "you cry for hours until the walls start closing in, press button or give up", bottomRightI = "just press it dude", bottomRightII = "die";
+String bottomMiddleFirst = "you press the button and are teleported outside to freedom now you are super happy :)", bottomMiddleI = "Reset", bottomMiddleII = "Exit very happy";
 
 PFont fontI;
 void textSetup() { //end textSetup
