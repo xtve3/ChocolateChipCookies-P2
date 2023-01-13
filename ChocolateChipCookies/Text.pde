@@ -7,7 +7,7 @@ String topRightFirst = "Story text topright", topRightI = "option 1 topright", t
 String leftFirst = "story text left", leftI = "option 1 left", leftII = "option 2 left";
 String middleFirst = "story text middle", middleI = "option 1 middle", middleII = "option 2 middle";
 String rightFirst = "story text right", rightI = "option 1 right", rightII = "option 2 right";
-String bottomLeftFirst = "story text bottomleft", bottomLeftI = "option 1 bottomleft", bottomLeftII = "option 2 bottomleft";
+String bottomLeftFirst = "You hide from the murderer and he drops a button. do you press the button or no", bottomLeftI = "option 1 bottomleft", bottomLeftII = "option 2 bottomleft";
 String bottomRightFirst = "story text bottomright", bottomRightI = "option 1 bottomright", bottomRightII = "option 2 bottomright";
 String bottomMiddleFirst = "sotry text bottommiddle", bottomMiddleI = "option 1 bottommiddle", bottomMiddleII = "option 2 bottommiddle";
 
