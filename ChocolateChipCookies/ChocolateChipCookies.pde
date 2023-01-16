@@ -9,7 +9,7 @@ import ddf.minim.ugens.*;
 int appWidth, appHeight, largerDimension, smallerDimension;
 Boolean OS_On=false, splashScreenStart=false; 
 Boolean nightMode=false; //bonus1: populate with system clock
-color resetDefaultInk=#000000, white=#FFFFFF, green=#2C6A00, grey=#6B746B; 
+color resetDefaultInk=#000000, white=#FFFFFF, green=#765F43, grey=#6B746B; 
 /* nightMode comments
  green is nightMode friendly?
  resetDefaultInk is nightMode friendly
@@ -45,6 +45,7 @@ void draw () {
   if (splashScreenStart==true) bottomLeftSquare();
   if (splashScreenStart==true) bottomRightSquare();
   if (splashScreenStart==true) bottomSquare();
+  if (splashScreenStart==true) Buttons();
 }//End draw
 //
 void keyPressed () {
@@ -75,6 +76,28 @@ void mousePressed () {
   if (splashScreenStart==true)
     if (mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight) exit();
   //
+  //
+  if (topSquareLeftVari==true &&  mouseX>=topSquareX1 && mouseX<=topSquareX1+topSquareWidth1 && mouseY>=topSquareY1 && mouseY<=topSquareY1+topSquareHeight1) {
+    topLeftSquareButtonsVari=true;
+    topSquareButtonsVari=false;
+    topSquare=true;
+    topLeft=false;
+  }
+  //
+  if (topSquareRightVari==true &&  mouseX>=topSquareX2 && mouseX<=topSquareX2+topSquareWidth2 && mouseY>=topSquareY2 && mouseY<=topSquareY2+topSquareHeight2) {
+    topRightSquareButtonsVari=true;
+    topSquareButtonsVari=false;
+    topSquare=true;
+    topRight=false;
+  }
+  //
+  //
+  if (topLeftSquareHideVari==true && mouseX>=topLeftX1 && mouseX<=topLeftX1+topLeftWidth1 && mouseY>=topLeftY1 && mouseY<=topLeftY1+topLeftHeight1) {
+  bottomLeftSquareButtonsVari=true;
+  topLeftSquareButtonsVari=false;
+  bottomLeft=true;
+  topLeft=false;
+  }
 }//End mousePressed
 //
 //End main program

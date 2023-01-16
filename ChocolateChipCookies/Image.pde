@@ -1,8 +1,9 @@
-PImage backgroundImage, quitButtonImage;
+PImage backgroundImage, quitButtonImage, darkModeImage;
 //
 void imageSetup() { //could be reguarded as image population
   backgroundImage=loadImage("../Images Used/smilelaugh.jpg");
   quitButtonImage=loadImage("../Images Used/tesla.jpg");
+  darkModeImage=loadImage("../Images Used/unnamed.jpg");
 }//end imageSetup
 void imageTintNightMode () {
   //control night mode, colour with ternary operator

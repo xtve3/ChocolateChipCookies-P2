@@ -1,4 +1,4 @@
-Boolean bottomLeft=false, bottomRight=false, bottomSquare=false, topLeft=false, topRight=false, topSquare=false, leftSquare=false, rightSquare=false, middleSquare=false;
+Boolean bottomLeft=true, bottomRight=true, bottomSquare=true, topLeft=true, topRight=true, topSquare=false, leftSquare=true, rightSquare=true, middleSquare=true;
 //
 float topLeftX0, topLeftY0, topLeftWidth0, topLeftHeight0;
 float topLeftX1, topLeftY1, topLeftWidth1, topLeftHeight1;
@@ -47,9 +47,9 @@ float bottomRightCoverX, bottomRightCoverY, bottomRightCoverWidth, bottomRightCo
 float bottomSquareCoverX, bottomSquareCoverY, bottomSquareCoverWidth, bottomSquareCoverHeight;
 //
 void topLeftSquare() {
-  if (topLeft==true && nightMode==false) { //dayMode version
-    fill(grey); 
-    rect(topLeftCoverX, topLeftCoverY, topLeftCoverWidth, topLeftCoverHeight);
+  if (topLeft==true && nightMode==false) { //dayMode version 
+    fill(grey);
+    rect( topLeftCoverX, topLeftCoverY, topLeftCoverWidth, topLeftCoverHeight);
   } 
   if (topLeft==false && nightMode==false) {
     noFill();
@@ -65,8 +65,8 @@ void topLeftSquare() {
     topLeft2Text();
   }
   if (topLeft==true && nightMode==true) { //nightMode version
-    fill(resetDefaultInk); 
-    rect(topLeftCoverX, topLeftCoverY, topLeftCoverWidth, topLeftCoverHeight);
+    fill(resetDefaultInk);
+    rect( topLeftCoverX, topLeftCoverY, topLeftCoverWidth, topLeftCoverHeight);
   } 
   if (topLeft==false && nightMode==true) {
     noFill();
@@ -80,6 +80,7 @@ void topLeftSquare() {
     noFill();
     rect(topLeftX2, topLeftY2, topLeftWidth2, topLeftHeight2);
     topLeft2Text();
+    
   }
 }//end topLeftSquare
 //
