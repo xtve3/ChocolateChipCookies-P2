@@ -37,27 +37,27 @@ void Buttons () {
   leftSquareRightVari=true;
   }
   //
-  if (rightSquareButtonsVari=true) {
+  if (rightSquareButtonsVari==true) {
   rightSquareButtonVari=true;
   rightSquareCryVari=true;
   }
   //
-  if (middleSquareButtonsVari=true) {
+  if (middleSquareButtonsVari==true) {
   middleSquareRetry=true;
   middleSquareExit=true; 
   }
   //
-  if (bottomLeftSquareButtonsVari=true) {
+  if (bottomLeftSquareButtonsVari==true) {
    bottomLeftSquarePressVari=true;
    bottomLeftSquareNoPressVari=true;
   }
   //
-  if (bottomRightSquareButtonsVari=true) {
+  if (bottomRightSquareButtonsVari==true) {
    bottomRightSquareDieVari=true;
    bottomRightSquareButtonVari=true;
   }
   //
-  if (bottomSquareButtonsVari=true) {
+  if (bottomSquareButtonsVari==true) {
    bottomSquareRetryVari=true; 
    bottomSquareExitVari=true;
   }

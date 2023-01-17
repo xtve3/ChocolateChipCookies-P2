@@ -80,7 +80,6 @@ void topLeftSquare() {
     noFill();
     rect(topLeftX2, topLeftY2, topLeftWidth2, topLeftHeight2);
     topLeft2Text();
-    
   }
 }//end topLeftSquare
 //
