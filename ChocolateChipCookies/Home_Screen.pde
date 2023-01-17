@@ -11,7 +11,7 @@ void homeScreen() { //Exists in VOID DRAW
    - Background Image using tint()
    - Nine evenly spaced rectangles
    - Quit button and reset button (Splash screen start button)
-   - In each: image, text 2D Shape, Button
+   - In each: image, text, 2D Shape, Button
    - Narrative through the nine rectangles
    - See case study
    - Note: must have one image with aspect ratio
