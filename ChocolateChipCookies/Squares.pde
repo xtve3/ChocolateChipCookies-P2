@@ -65,8 +65,8 @@ void topLeftSquare() {
     topLeft2Text();
   }
   if (topLeft==true && nightMode==true) { //nightMode version
-    fill(resetDefaultInk);
-    rect( topLeftCoverX, topLeftCoverY, topLeftCoverWidth, topLeftCoverHeight);
+    
+    image(darkModeImage, topLeftCoverX, topLeftCoverY, topLeftCoverWidth, topLeftCoverHeight);
   } 
   if (topLeft==false && nightMode==true) {
     noFill();
@@ -102,8 +102,7 @@ void topRightSquare () {
     topRight2Text();
   }
   if (topRight==true && nightMode==true) { //nightMode version
-    fill(resetDefaultInk); 
-    rect(topRightCoverX, topRightCoverY, topRightCoverWidth, topRightCoverHeight);
+   image(darkModeImage,topRightCoverX, topRightCoverY, topRightCoverWidth, topRightCoverHeight);
   } 
   if (topRight==false && nightMode==true) {
     noFill();
@@ -139,8 +138,7 @@ void topMiddleSquare () {
     topSquare2Text();
   }
   if (topSquare==true && nightMode==true) { //nightMode version
-    fill(resetDefaultInk); 
-    rect(topSquareCoverX, topSquareCoverY, topSquareCoverWidth, topSquareCoverHeight);
+   image(darkModeImage,topSquareCoverX, topSquareCoverY, topSquareCoverWidth, topSquareCoverHeight);
   } 
   if (topSquare==false && nightMode==true) {
     noFill();
@@ -176,8 +174,7 @@ void leftSquare () {
     left2Text();
   }
   if (leftSquare==true && nightMode==true) { //nightMode version
-    fill(resetDefaultInk); 
-    rect(leftSquareCoverX, leftSquareCoverY, leftSquareCoverWidth, leftSquareCoverHeight);
+  image(darkModeImage,leftSquareCoverX, leftSquareCoverY, leftSquareCoverWidth, leftSquareCoverHeight);
   } 
   if (leftSquare==false && nightMode==true) {
     noFill();
@@ -213,8 +210,7 @@ void rightSquare () {
     right2Text();
   }
   if (rightSquare==true && nightMode==true) { //nightMode version
-    fill(resetDefaultInk); 
-    rect(rightSquareCoverX, rightSquareCoverY, rightSquareCoverWidth, rightSquareCoverHeight);
+   image(darkModeImage,rightSquareCoverX, rightSquareCoverY, rightSquareCoverWidth, rightSquareCoverHeight);
   } 
   if (rightSquare==false && nightMode==true) {
     noFill();
@@ -251,8 +247,7 @@ void middleSquare() {
   }
   //
   if (middleSquare==true && nightMode==true) { //nightMode version
-    fill(resetDefaultInk); 
-    rect(middleSquareCoverX, middleSquareCoverY, middleSquareCoverWidth, middleSquareCoverHeight);
+   image(darkModeImage,middleSquareCoverX, middleSquareCoverY, middleSquareCoverWidth, middleSquareCoverHeight);
   } 
   if (middleSquare==false && nightMode==true) {
     noFill();
@@ -289,8 +284,7 @@ void bottomLeftSquare () {
   }
   //
   if (bottomLeft==true && nightMode==true) { //nightMode version
-    fill(resetDefaultInk); 
-    rect(bottomLeftCoverX, bottomLeftCoverY, bottomLeftCoverWidth, bottomLeftCoverHeight);
+   image(darkModeImage,bottomLeftCoverX, bottomLeftCoverY, bottomLeftCoverWidth, bottomLeftCoverHeight);
   } 
   if (bottomLeft==false && nightMode==true) {
     noFill();
@@ -327,8 +321,7 @@ void bottomRightSquare () {
   }
   //
   if (bottomRight==true && nightMode==true) { //nightMode version
-    fill(resetDefaultInk); 
-    rect(bottomRightCoverX, bottomRightCoverY, bottomRightCoverWidth, bottomRightCoverHeight);
+    image(darkModeImage,bottomRightCoverX, bottomRightCoverY, bottomRightCoverWidth, bottomRightCoverHeight);
   } 
   if (bottomRight==false && nightMode==true) {
     noFill();
@@ -365,8 +358,7 @@ void bottomSquare() {
   }
   //
   if (bottomSquare==true && nightMode==true) { //nightMode version
-    fill(resetDefaultInk); 
-    rect(bottomSquareCoverX, bottomSquareCoverY, bottomSquareCoverWidth, bottomSquareCoverHeight);
+  image(darkModeImage,bottomSquareCoverX, bottomSquareCoverY, bottomSquareCoverWidth, bottomSquareCoverHeight);
   } 
   if (bottomSquare==false && nightMode==true) {
     noFill();
